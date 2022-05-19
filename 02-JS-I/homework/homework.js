@@ -1,28 +1,22 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-const nuevaString = null;
-var crear = "creada";
+const nuevaString = "creado";
 
 // Crea una variable numérica, puede ser cualquier número:
-const nuevoNum = null;
-var num = 21;
+const nuevoNum = 21;
 
 // Crea una variable booleana:
-const nuevoBool = null;
-var blanco = true;
+const nuevoBool = true;
 
 // Resuelve el siguiente problema matemático:
-const nuevaResta = 10 - null === 5;
-console.log(10-5);
+const nuevaResta = 10 - 5 === 5;
 
 // Resuelve el siguiente problema matemático:
-const nuevaMultiplicacion = 10 * null === 40 ;
-console.log(10*4);
+const nuevaMultiplicacion = 10 * 4 === 40 ;
 
 // Resuelve el siguiente problema matemático:
-const nuevoModulo = 21 % 5 === null;
-console.log(21%5);
+const nuevoModulo = 21 % 5 === 1;
 
 
 
@@ -35,9 +29,8 @@ console.log(21%5);
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-    retunr(str);
-  
-}
+    return(str);
+  }
 
 function suma(x, y) {
   // "x" e "y" son números
@@ -72,14 +65,19 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-    if  {}
-  
+    if (x === y) {
+      return true; }
+      else  {
+        return false; }   
 }
+  
 
 function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
+    if (str1.length === str2.length) {return true;}
+    else {return false;}
   
 }
 
@@ -87,6 +85,8 @@ function menosQueNoventa(num) {
   // Devuelve "true" si el argumento de la función "num" es menor que noventa
   // De lo contrario, devuelve "false"
   // Tu código:
+    if (num < 90) {return true;}
+    else {return false;}
   
 }
 
