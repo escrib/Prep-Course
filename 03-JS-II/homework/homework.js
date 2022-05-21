@@ -5,12 +5,20 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+      if (x > y) { 
+      return x; 
+      } else { 
+        return y;}
+      return x;
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+      if (edad >= 18) {
+        return "Allowed";}
+        else {return 'Not allowed';}
 }
   
 function conection(status) {
@@ -19,6 +27,13 @@ function conection(status) {
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
+      if (status === 1) {
+        return 'Online';
+      } if (status === 2) {
+        return 'Away';
+      } else {
+        return 'Offline';
+      }
 }
 
 function saludo(idioma) {
@@ -28,7 +43,16 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-}
+      if (idioma === 'aleman') {
+      return 'Guten Tag!';
+      } if (idioma === 'ingles') {
+        return 'Hello!';
+        }   if (idioma === 'mandarin') {
+            return 'Ni Hao!';
+            }     else {
+                  return 'Hola!';
+                  }
+  }
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -38,12 +62,27 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  switch (color) {
+    case 'blue': 
+      return 'This is blue';
+    case 'red':
+      return 'This is red';
+    case 'green':
+      return 'This is green';
+    case 'orange':
+      return 'This is orange';
+    default:
+      return 'Color not found';
+  }
 }
 
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero === 10 || numero ===5) {
+    return true;
+  } else {return false;}
 }
 
 function estaEnRango(numero) {
